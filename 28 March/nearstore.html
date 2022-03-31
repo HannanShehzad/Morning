@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Near Store</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+   
+
+</head>
+<body>
+    <style>
+        * {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+.topNav-link ul {
+    display: flex !important;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.topNav-link ul li {
+    margin-left: 3%;
+    list-style-type: none;
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search_wrap {
+    margin: 2% auto;
+}
+
+.search_box {
+    display: grid;
+    grid-template-columns: 25% 1fr 7%;
+    padding: 5px 0%;
+    outline: 1px solid rgb(238, 69, 69);
+    outline-offset: -1px;
+}
+
+.search_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_left button {
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 14px;
+}
+.search_center input[type="text"] {
+    width: 100%;
+    padding: 5px 7px;
+    border: none;
+    border-left: 1px solid rgb(119, 119, 119);
+    background: none;
+    outline: none;
+    color: #333;
+}
+
+.search_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_right button {
+    border: none;
+    background: none;
+    outline: none;
+    color: #333;
+    font-size: 16px;
+}
+.nav_middal {
+    display: grid;
+    grid-template-columns: 20% 1fr 35%;
+}
+.nav_left {
+    display: flex;
+    align-items: center;
+}
+.nav_center {
+    padding-top: 2%;
+}
+.nav_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+.NR_box {
+    text-align: center;
+    padding-top: 12px;
+    cursor: pointer;
+}
+.NR_box span {
+    font-size: 1rem;
+}
+.NR_box p {
+    font-size: 13px;
+}
+.NR_box:hover {
+    color: rgb(238, 69, 69);
+}
+
+.nav_bottom {
+    background-color: #333;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    color: #fff;
+}
+.NB-left {
+    background-color: rgb(238, 69, 69);
+    padding: 10px;
+    cursor: pointer;
+}
+.NB-center {
+    padding-top: 12px;
+}
+.NB-center ul {
+    display: flex;
+    align-items: center;
+}
+.NB-center ul li {
+    list-style-type: none;
+    margin-right: 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.NB-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+    cursor: pointer;
+}
+.hero{
+    background-color:aqua;
+    height: 80vh;
+    display: flex
+
+}
+.HSleft{
+    width: 40%;
+    height: 100%;
+    /* position: absolute; */
+    background-color:crimson;
+    display: flex;
+    justify-content:left:
+    
+}
+.HSright{
+    width: 60%;
+    height: 100%;
+    /* background-color:darkgoldenrod; */
+    background-image: url(./artin-bakhan-SqLyNHbsLKQ-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* justify-content: right; */
+}
+.HSRContent{
+    color: #fff;
+    /* background-color: #333; */
+    display: flex;
+    flex-direction: column ;
+    justify-content: center ;
+
+}
+.HSRContent>button{
+    width: 20%;
+}
+
+    </style>
+    
+    <div class="container-fluid border-bottom px-4 pt-3">
+        <div class="row">
+            <div class="col-2"><small>WELCOME TO NEARSTORE</small></div>
+            <div class="col-10 topNav-link">
+                <ul>
+                    <li> Sign in / Register</li>
+                    <li>My Account</li>
+                    <li>Contact Us</li>
+                    <li>Blog</li>
+                    <li style=" padding-right: 1%; border-right: 1px rgb(27, 27, 27) solid;">ENG </li>
+                    <li>USD </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid px-4 py-2 nav_middal">
+        <div class="nav_left">
+            <img src="logo.jpg" class="img-fluid" alt="Loading">
+        </div>
+        <div class="nav_center">
+            
+            <div class="search_box">
+
+                <div class="search_left">
+                    <button>All Categories </button>
+                </div>
+                <div class="search_center">
+                    <input type="text">
+                </div>
+                <div class="search_right">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav_right">
+            <div class="NR_box">
+                <span></span>
+                <p>Call Us</p>
+            </div>
+            <div class="NR_box">
+                <span></span>
+                <p>Wishlist</p>
+            </div>
+            <div class="NR_box">
+                <span></span>
+                <p>Campare</p>
+            </div>
+            <div class="NR_box">
+                <span></span>
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4 nav_bottom">
+        <div class="NB-left">
+            
+                <small class="me-5">Browse Categories</small>
+                
+        </div>
+        <div class="NB-center">
+            <ul>
+                <li>Home</li>
+                <li>Shop </li>
+                <li>Vendor </li>
+                <li>Blog </li>
+                <li>About Us</li>
+            </ul>
+        </div>
+
+        <div class="NB-right">
+            <span> Track Order</span>
+            <span>Daily Deals</span>
+        </div>
+
+    </div>
+    <!-- hero saction -->
+
+   <div class="wrapper">
+    <div class="hero">
+        <div class="HSleft">
+
+
+        </div>
+        <div class="HSright">
+            <div class="HSRContent">
+                <h4>FROM ONLINE STORE</h4>
+                <h1>NIKE SHOES</h1>
+                <h3>Recomended</h3>
+                <p>Free Shoping</p>
+                <button>SHOP NOW</button>
+            </div>
+
+        </div>
+
+    </div>
+
+   </div>
+    <!-- Bootstrap Js File Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
