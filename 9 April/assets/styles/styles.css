@@ -1,0 +1,187 @@
+#background{
+    /* background-image: url("/assets/media/alejandro-escamilla-Dl6jeyfihLk-unsplash.jpg"); */
+    background: linear-gradient(rgba(0.1, 0, 0, 0.4), rgba(0.1, 0, 0, 0.4)), 
+    url("/assets/media/freestocks-hRVrvH9-dG0-unsplash.jpg") ;
+    
+    background-repeat: no-repeat;
+    height: 150vh;
+    width: 100%;
+    /* background-blend-mode:luminosity; */
+
+     background-attachment:scroll;
+     background-position: center;
+
+}
+body button:hover{
+    background-color :rgb(10, 63, 144);
+}
+:root{
+    --Ntxt:rgb(156, 156, 156);
+    --bgclr:rgba(60, 60, 60, 0.581);
+    --btnclr:rgb(25,94,200);
+    --white:rgba(255, 255, 255, 0.822);
+}
+.row-wrap{
+    /* background-color: aqua; */
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+}
+.dd-left{
+    position: relative;
+    display: inline-block ;
+    /* margin-top: 10px; */
+    color: var(--Ntxt);
+
+}
+.dropdown-content{
+    display: none;
+    margin-top: 1px;
+    width: 200px;
+  position: absolute;
+  background-color: var(--bgclr);
+  border-radius: 10px;
+  color: var(--Ntxt);
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown-content a{
+    
+    text-decoration: none;
+    color: var(--Ntxt);
+}
+.dd-left:hover .dropdown-content{
+    display: block;
+}
+.row{
+    margin-right: 0px !important;
+}
+.active    {
+    color: var(--Ntxt) !important;
+}
+.icons{
+    margin-right: -20px !important;
+    padding-right: 1px !important;
+}
+.fa-sm{
+    margin-right: 1% ;
+    margin-top: 13px;
+}
+
+.fa-sm:hover{
+    color: blue;
+}
+.left-padding{
+    padding-left: 1% !important;
+    margin-left: 1% !important;
+    padding-right: 1% !important;
+    margin-right:1% !important;
+}
+.logo{
+    color: var(--white);
+    font-size: 30px;
+}
+.logo a{
+    color: var(--white);
+    text-decoration: none !important;
+
+}
+.secnd-nav{
+    margin-right: 0% !important;
+    padding-right:1% !important ;
+}
+/* search box */
+/* .s-padding{
+    padding-left: 0% !important;
+    margin-left: 0% !important;
+
+}
+.searchbox{
+    display: grid;
+
+    
+    background-color: var(--btnclr);
+}
+.searchbox input{
+    padding-left: 0% !important;
+    margin-left: 0% !important;
+    height: 46px;
+    width: 86%;
+}
+
+.searchbox i{
+    padding-left: 92%;
+    padding-bottom: 0px ;
+    color: var(--white);
+} */
+.btn-outline-primary{
+    
+    color:var(--white) !important;
+    margin-left: 0px !important;
+    border:0px !important;
+    background-color: var(--btnclr) !important;
+}
+.me-2{
+    width: 250px !important;
+}
+
+.col i{
+    color: var(--white);
+}
+
+.navmr{
+    color: var(--white);
+    width: 40% !important;
+    padding-top: 16px;
+    padding-left: 6% !important;
+    /* margin-right: 10% !important; */
+    
+    display: flex;
+}
+.navmr h6{
+    margin-top: -9px !important;
+    margin-left: 4%;
+    margin-right: 6%;
+    
+}
+.navmr h6 a{
+    color: var(--white);
+    text-decoration: none !important;
+}
+.fa-lg a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Courier New', Courier, monospace;
+}
+.navr{
+    margin-top: 17px !important;
+    /* margin-left: 10px; */
+    
+}
+.navr button{
+    border: none;
+    background-color: var(--btnclr);
+    color: var(--white);
+    border-radius: 20px;
+    width: 90px;
+    height: 40px;
+    margin-top: -18px;
+    margin-left: 100%;
+}
+/* footer */
+.footer{
+    background-color: white;
+    height: 75vh;
+}
+.footer-in{
+    padding-top: 10%;
+}
+.footer-in p{
+    font-size:15px;
+    color: var(--Ntxt);
+}
+.footer-in ul{
+    font-size:15px;
+    color: var(--Ntxt);
+}

@@ -744,3 +744,134 @@
    
 
 }
+.btn{
+    padding: auto;
+    background-color: transparent !important;
+    color: #333 !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 12px ;
+}
+
+
+.col1{
+    
+    
+    border: 1px red solid ;
+    padding:5px ;
+    width: auto;
+}
+
+.col2{
+    
+    border: 1px red solid ;
+    padding:5px ;  
+    width: auto;
+
+}
+.cols{
+ padding: 1%;
+}
+
+.card-body{
+    border: none;
+}
+
+.card-body button {
+    border: 1px solid #333;
+    background: none;
+    color: #333;
+    font-size: 12px;
+    padding: 8px 25px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s ease-in-out;
+    margin-top: 5px;
+}
+.card-body button:hover {
+    background-color: #333;
+    color: #fff;
+}
+.card-body i {
+    padding-left: 10%;
+}
+
+.login{
+    padding-top: 6%;
+    padding-left: 13%;  
+}
+
+
+.link2{
+    text-decoration: none;
+    color: black;
+    padding-left: 10%;
+}
+
+.login a:hover{
+    color: rgb(238, 69, 69);
+}
+
+.login-form{
+    width: 80%;
+    padding-left: 22% !important;
+    padding-right: 22% !important;
+
+}
+.form-control{
+    background-color: rgba(110, 110, 110, 0.089);
+
+}
+.login-form button{
+    background-color: rgb(238, 69, 69) ;
+    border: none ;
+    color: #fff;
+    width: 100%;
+    height:40px ;
+    margin-top: 50px ;
+    border-radius: 5px;
+}
+
+.container1{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.col{
+    /* background-color: rgb(172, 9, 9); */
+    margin-left: 2px ;
+    height: 75vh;
+    padding: none;
+
+}
+.bimg img{
+    padding: none;
+    width:100%;
+    height: 350px;
+}
+
+.simg{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.simg img{
+    /* border: 1px solid #333;  */
+    border-radius: 10px;
+    width: 100%; 
+    height: 119px;
+}
+.simg img:hover{
+    border: 3px solid rgb(238, 69, 69);
+}
+
+.siname h3{
+    color: rgb(238, 69, 69) ;
+    padding-top:60px ;
+}
+.si-price{
+    color: rgb(39, 240, 180);
+}
+.siname a{
+    text-decoration: none;
+    color: #333;
+}
+
