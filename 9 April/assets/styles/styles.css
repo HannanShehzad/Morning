@@ -17,7 +17,7 @@ body button:hover{
 }
 :root{
     --Ntxt:rgb(156, 156, 156);
-    --bgclr:rgba(60, 60, 60, 0.581);
+    --bgclr:rgba(45, 45, 45, 0.715);
     --btnclr:rgb(25,94,200);
     --white:rgba(255, 255, 255, 0.822);
 }
@@ -34,9 +34,9 @@ body button:hover{
 
 }
 .dropdown-content{
-    display: none;
-    margin-top: 1px;
-    width: 200px;
+  display: none;
+  margin-top: 1px;
+  width: 200px;
   position: absolute;
   background-color: var(--bgclr);
   border-radius: 10px;
@@ -78,98 +78,93 @@ body button:hover{
     padding-right: 1% !important;
     margin-right:1% !important;
 }
-.logo{
-    color: var(--white);
-    font-size: 30px;
+
+                                                        /* 2nd nav */
+
+
+.navbar-brand{
+    font-size:35px !important;
 }
-.logo a{
-    color: var(--white);
-    text-decoration: none !important;
+.d-flex{
+    padding-top: 15px;
+}
+.d-flex button{
+    color:var(--white);
+    background-color:var(--btnclr);
+    border:none;
+    border-radius:  0px !important;
+    height: 40px;
+    margin-top:8px;
+    margin-right: 3%;
+}
+.d-flex input{
+    border: none;
+    border-radius: 0;
+    margin-right: 0% !important;    
+    margin-top: 8px !important;
+    height: 40px;
+}
+.d-flex i{
+    color: var(--btnclr);
+    background-color:rgb(238,238,238);
+    font-size:12px;
+    padding: 12px;
+    padding-top: 15px;
+    /* margin-bottom: 7px !important; */
+    margin-right: 0%;
+    height: 40px;
+}
+.search-right{
+    padding-right:0% !important;
+}
+.dropdown-content-clr{
+    background-color:rgba(10, 10, 34, 0.765);
+    border-radius:0px;
 
 }
-.secnd-nav{
-    margin-right: 0% !important;
-    padding-right:1% !important ;
+.navi3{
+    padding-left: 0%;
+    padding-top: 28px;
 }
-/* search box */
-/* .s-padding{
-    padding-left: 0% !important;
-    margin-left: 0% !important;
-
+.navi3 a{
+    color: var(--white) !important;
+    text-decoration:none !important;
 }
-.searchbox{
-    display: grid;
-
-    
-    background-color: var(--btnclr);
-}
-.searchbox input{
-    padding-left: 0% !important;
-    margin-left: 0% !important;
-    height: 46px;
-    width: 86%;
-}
-
-.searchbox i{
-    padding-left: 92%;
-    padding-bottom: 0px ;
+.navi3 a i{
     color: var(--white);
-} */
-.btn-outline-primary{
-    
-    color:var(--white) !important;
-    margin-left: 0px !important;
-    border:0px !important;
-    background-color: var(--btnclr) !important;
-}
-.me-2{
-    width: 250px !important;
-}
 
-.col i{
-    color: var(--white);
 }
-
-.navmr{
-    color: var(--white);
-    width: 40% !important;
-    padding-top: 16px;
-    padding-left: 6% !important;
-    /* margin-right: 10% !important; */
-    
-    display: flex;
-}
-.navmr h6{
-    margin-top: -9px !important;
-    margin-left: 4%;
-    margin-right: 6%;
-    
-}
-.navmr h6 a{
-    color: var(--white);
-    text-decoration: none !important;
-}
-.fa-lg a{
+.no-decor{
     text-decoration: none;
     color: var(--white);
-    font-family: 'Courier New', Courier, monospace;
+}   
+.navi5 button{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    border-radius:30px !important;
+
+
 }
-.navr{
-    margin-top: 17px !important;
-    /* margin-left: 10px; */
-    
-}
-.navr button{
-    border: none;
-    background-color: var(--btnclr);
+
+
+
+.navi5 a{
     color: var(--white);
-    border-radius: 20px;
-    width: 90px;
-    height: 40px;
-    margin-top: -18px;
-    margin-left: 100%;
+    font-size: 20px;
+    margin-top: 22px;
+    margin-right: 10%;
 }
-/* footer */
+.navi5 i{
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: -20%;
+
+    
+    color:var(--white);
+    background-color: rgba(0, 255, 255, 0);
+}
+                                        /* footer  */
 .footer{
     background-color: white;
     height: 75vh;
@@ -184,4 +179,29 @@ body button:hover{
 .footer-in ul{
     font-size:15px;
     color: var(--Ntxt);
+}
+.f-about a{
+    color: var(--Ntxt);
+    padding: 10px;
+}
+.fcard{
+    width: 400px;
+    height: 130px;
+}
+.f-c-img{
+    padding-right: 0% !important;
+    margin-right: 0% !important;
+    padding-top: 6% !important;
+    padding-left: 10% !important;
+
+}
+.card{
+    border: none !important;
+
+}
+.card-body{
+    padding-top: 10% !important;
+}
+.blog{
+    margin-left: 50%;
 }

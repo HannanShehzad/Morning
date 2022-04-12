@@ -10,20 +10,20 @@
     href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
     rel="stylesheet"
   />
-    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/71f391ff89.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
       <div id="background">
-        <!-- left nav -->
+        <!-- top nav -->
         
 
         <div class="container row-wrap">
           
           <div class="row  ">
-            <div class="col-4 ">
+            <div class="col-md-4 col-sm-4 ">
               
               <div class="dd-left" >
                 <span>English <i class="fa-solid fa-chevron-down fa-xs"></i></span>
@@ -35,7 +35,7 @@
               </div>
             </div>
             <!-- right nav -->
-            <div class="col-8">
+            <div class="col-md-8 col-sm-8">
               <div>
 
                 <ul class="nav justify-content-end">
@@ -94,37 +94,61 @@
         </div><br>
 
         <!-- 2nd nav -->
-        <div class="secnd-nav">
-          
-          <div class="container left-padding">
-            <div class="row s-padding ">
-              <div  class="col logo "><a href="#"><strong><b>Master</b></strong>study</a></div>
-              <div class="col searchbox">
 
-                
-                  <!-- <input type="text" placeholder="Search courses"><i class="fa-solid fa-magnifying-glass fa-xl"></i> -->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><strong><b>Master</b></strong>study</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
                   <form class="d-flex">
+                      <!-- Dropdown -->
+                     <ul>
+                      
+                      <li class="nav-item dd-left">
+                        <a  class="nav-link active search-right" aria-current="page" href="#"><i class="fa-solid fa-bars"></i></a>
+                        <div class="dropdown-content dropdown-content-clr">
+                          <p><a href="#">Art</a></p>
+                        <p><a href="#">Exercise</a></p>
+                        <p><a href="#">Meterial Design</a></p>
+                        <p><a href="#">Music</a></p>
+                        <p><a href="#">Photography</a></p>
+                        <p><a href="#">Software Development</a></p>
+
+
+                      </li>
+                     </ul>
                     <input class="form-control me-2" type="search" placeholder="Search courses" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
                   </form>
-
-              </div>
-              <div class="col-md-auto navmr">
-                <i class="fa-solid fa-bullhorn fa-lg"></i>
-              <h6> <a href="#">Become an instructer</a></h6>
-              <i class="fa-solid fa-briefcase fa-lg"></i>
-              <H6><a href="#"> For Enterprise</a></H6>
-              </div>
-              <div class="col navr">
-                <i class="fa-solid fa-user fa-lg "> <a href="#">Login</a> </i> 
-                <button>Sign Up</button>
+                </li>
+                <li class="nav-item navi3">
+                  <a class="nav-link" href="#"><i class="bi bi-megaphone"></i> Become an Insturctor  </a>
+                </li>
+                <li class="nav-item navi3 ">
+                  <a class="nav-link " href="#"  >
+                    <i class="bi bi-briefcase">  </i>For Enterprise
+                  </a>
+                  
+                </li>
                 
-
-              </div>
+              </ul>
+              <form class="d-flex navi5">
+                <i class="bi bi-person"></i><a class="no-decor" href="#">Login</a>
+                <button class="btn " type="submit"><a class="no-decor" href="#">Signup</a></button>
+              </form>
             </div>
           </div>
+        </nav>
+        
+        
 
-        </div>
+       
+
+        
 
 
 
@@ -139,14 +163,16 @@
         <div class="footer-in">
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-3 col-md-3 f-about ">
                 <h6> About</h6>
                 <p>Masterstudy is Education WordPress theme featured by Learning Management System (LMS) for online education.
                   Developed by StylemixThemes.</p><br>
-                  <i class="fa-brands fa-facebook"></i>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                  <a href="#"><i class="bi bi-twitter"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i> </a>
 
             </div>
-              <div class="col">
+              <div class="col-sm-3 col-md-3">
                 <h6>Contact</h6>
                 <p>USA, Callifornia 20, First Avenue, Callifornia <br> <br>
                   Tel.: +1 212 458 300 32 <br><br>
@@ -154,7 +180,7 @@
                   info@masterstudy.com
                 </p>
               </div>
-              <div class="col">
+              <div class="col-sm-3 col-md-3">
                 <h6>Pages</h6> <br>
                 <ul>
                   <li>Blog</li><br>
@@ -164,7 +190,44 @@
                   <li>Typograpy</li><br>
                 </ul>
               </div>
-              <div class="col">col</div>
+
+              <div class="col-sm-3 col-md-3">
+                <h6 class="blog"> Blog</h6>
+
+                <div class="card mb-3 fcard" style="  max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4 f-c-img">
+                      <img src="./assets/media/Fimg1.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        
+                        <p class="card-text">Our main topics is to "Developing yourself as a leader"</p>
+                        <p class="card-text"><small class="text-muted">August 9,2018</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3 fcard" style="  max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4 f-c-img">
+                      <img src="./assets/media/Fimg2.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        
+                        <p class="card-text">Those Other College Expenses You Aren't Thinking About</p>
+                        <p class="card-text"><small class="text-muted">june 3,2018</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+              </div>
             </div> 
           </div> 
         </div>
