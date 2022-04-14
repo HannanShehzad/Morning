@@ -1,7 +1,11 @@
+*{
+    font-family: montserrat;
+}
 #background{
     /* background-image: url("/assets/media/alejandro-escamilla-Dl6jeyfihLk-unsplash.jpg"); */
     background: linear-gradient(rgba(0.1, 0, 0, 0.4), rgba(0.1, 0, 0, 0.4)), 
     url("/assets/media/freestocks-hRVrvH9-dG0-unsplash.jpg") ;
+    background:blur ;
     
     background-repeat: no-repeat;
     height: 150vh;
@@ -25,6 +29,7 @@ body button:hover{
     /* background-color: aqua; */
     margin-left: 1% !important;
     margin-right: 1% !important;
+    margin-bottom: 1px !important;
 }
 .dd-left{
     position: relative;
@@ -32,6 +37,9 @@ body button:hover{
     /* margin-top: 10px; */
     color: var(--Ntxt);
 
+}
+.tlpadding{
+    margin-top:10px;
 }
 .dropdown-content{
   display: none;
@@ -93,7 +101,7 @@ body button:hover{
     background-color:var(--btnclr);
     border:none;
     border-radius:  0px !important;
-    height: 40px;
+    height: 45px;
     margin-top:8px;
     margin-right: 3%;
 }
@@ -102,17 +110,20 @@ body button:hover{
     border-radius: 0;
     margin-right: 0% !important;    
     margin-top: 8px !important;
-    height: 40px;
+    width:250px;
+    height: 45px;
 }
 .d-flex i{
     color: var(--btnclr);
     background-color:rgb(238,238,238);
     font-size:12px;
     padding: 12px;
-    padding-top: 15px;
+    padding-left: 16px !important;
+    padding-top: 17px;
     /* margin-bottom: 7px !important; */
     margin-right: 0%;
-    height: 40px;
+    height: 45px;
+    width: 45px;
 }
 .search-right{
     padding-right:0% !important;
@@ -164,6 +175,45 @@ body button:hover{
     color:var(--white);
     background-color: rgba(0, 255, 255, 0);
 }
+.navbar{
+    margin-top: -20px !important;
+}
+
+                                                /* Hero saction */
+
+.hs-heading{
+    margin-top: 180px;
+    margin-left:6%;
+}
+.hs-heading h1{
+    color: var(--white);
+    font-size: 70px;
+    font-weight: bold;
+}
+.hs-heading p{
+    color: rgba(255, 255, 255, 0.807);
+    font-size: 22px;
+
+}
+.hs-heading button {
+    
+    width: 140px;
+    font-size: 20px;
+    border-radius: 30px !important;
+    color: var(--white);
+    background-color: var(--btnclr);
+    border: none;
+    height: 45px;
+    margin-top: 8px;
+    margin-right: 3%;
+}
+.hswrap2{
+    margin-top: 140px;
+}
+
+
+
+
                                         /* footer  */
 .footer{
     background-color: white;
@@ -204,4 +254,16 @@ body button:hover{
 }
 .blog{
     margin-left: 50%;
+}
+.card-body a{
+    text-decoration: none;
+    color: var(--Ntxt);
+}
+.fpadding{
+    margin-left:4% !important;
+}
+
+.fpages ul li a{
+    text-decoration:none;
+    color: var(--Ntxt);
 }
