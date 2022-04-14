@@ -4,7 +4,7 @@
 #background{
     /* background-image: url("/assets/media/alejandro-escamilla-Dl6jeyfihLk-unsplash.jpg"); */
     background: linear-gradient(rgba(0.1, 0, 0, 0.4), rgba(0.1, 0, 0, 0.4)), 
-    url("/assets/media/freestocks-hRVrvH9-dG0-unsplash.jpg") ;
+    url("/assets/media/freestocks-hRVrvH9-dG0-unsplash.jpg");
     background:blur ;
     
     background-repeat: no-repeat;
