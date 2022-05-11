@@ -3,9 +3,10 @@
 }
 #background{
     /* background-image: url("/assets/media/alejandro-escamilla-Dl6jeyfihLk-unsplash.jpg"); */
-    background: linear-gradient(rgba(0.1, 0, 0, 0.4), rgba(0.1, 0, 0, 0.4)), 
-    url("/assets/media/freestocks-hRVrvH9-dG0-unsplash.jpg");
-    background:blur ;
+    background-image: linear-gradient(rgba(0.1, 0, 0, 0.4), rgba(0.1, 0, 0, 0.4)), 
+    url('../media/2.jpg');
+    /* background:blur ; */
+    /* background-image: url("../media/2.jpg"); */
     
     background-repeat: no-repeat;
     height: 150vh;
@@ -93,10 +94,10 @@ body button:hover{
 .navbar-brand{
     font-size:35px !important;
 }
-.d-flex{
+.nv-flex{
     padding-top: 15px;
 }
-.d-flex button{
+.nv-flex button{
     color:var(--white);
     background-color:var(--btnclr);
     border:none;
@@ -105,7 +106,7 @@ body button:hover{
     margin-top:8px;
     margin-right: 3%;
 }
-.d-flex input{
+.nv-flex input{
     border: none;
     border-radius: 0;
     margin-right: 0% !important;    
@@ -113,7 +114,7 @@ body button:hover{
     width:250px;
     height: 45px;
 }
-.d-flex i{
+.nv-flex i{
     color: var(--btnclr);
     background-color:rgb(238,238,238);
     font-size:12px;
@@ -211,11 +212,16 @@ body button:hover{
     margin-top: 140px;
 }
 
-
+@media screen And (max-width:840px) {
+    .hs-heading{
+        margin-top: 40px;
+        margin-left:6%;
+    }
+}
 
 
                                         /* footer  */
-.footer{
+/* .footer{
     background-color: white;
     height: 75vh;
 }
@@ -266,4 +272,35 @@ body button:hover{
 .fpages ul li a{
     text-decoration:none;
     color: var(--Ntxt);
+}
+
+.hs-padding{
+    padding-top: 100px;
+    padding-left: 7%;
+    padding-right: 7%;
+    
+} */
+
+.footer-wrap{
+    height: 350px;  
+}
+
+.f-sec1{
+    height: 100%;
+}
+.f-sec1 div{
+    padding-left: 3%;
+    padding-top: 5%;
+    border: 2px sienna solid;
+}
+.col1 h6{
+    font-size:20px ;
+    font-weight:bolder;
+}
+.col1 p{
+    color: var(--Ntxt);
+}
+.co11 a{
+    padding: 1% !important;
+    color: var(--Ntxt) !important;
 }

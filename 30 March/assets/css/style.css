@@ -758,17 +758,20 @@
     
     
     border: 1px red solid ;
-    padding:5px ;
+    padding:0px ;
     width: auto;
+    height: 237px;
 }
 
 .col2{
     
     border: 1px red solid ;
-    padding:5px ;  
+    padding:0px ;
     width: auto;
-
+    height: 237px;
 }
+
+
 .cols{
  padding: 1%;
 }
@@ -832,17 +835,8 @@
     border-radius: 5px;
 }
 
-.container1{
-    margin-left: 1%;
-    margin-right: 1%;
-}
-.col{
-    /* background-color: rgb(172, 9, 9); */
-    margin-left: 2px ;
-    height: 75vh;
-    padding: none;
 
-}
+
 .bimg img{
     padding: none;
     width:100%;
@@ -875,3 +869,7 @@
     color: #333;
 }
 
+.bg-image img{
+    height: 300px;
+  width: 300px;
+}

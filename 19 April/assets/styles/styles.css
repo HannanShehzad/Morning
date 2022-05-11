@@ -1,0 +1,33 @@
+:root{
+    --aclr:rgba(89, 88, 88, 0.757);
+    --nvclr:#20213f;
+
+}
+.cfheight{
+    height: 50px;
+}
+
+.TRlogo{
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.nav-i i{
+    color: var(--aclr);
+    padding: 50%;
+    padding: 10px;
+    margin:2px ;
+    margin-top:5px ;
+    border:1px solid rgb(182, 179, 179);
+    border-radius: 50%;
+}
+.nodecor-a{
+    text-decoration: none;
+
+}
+                                                    /* down navbar */
+.nv-wrap{
+    background-color: var(--nvclr);
+}
+.search-wrap{
+    width: 200px !important;
+}
