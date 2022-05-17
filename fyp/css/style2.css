@@ -245,7 +245,7 @@ section {
 	-o-transition: background-color 1s ease-in-out, border 1s ease-in-out;
 }
 .navbar-custom .navbar-brand,.navbar-custom .navbar-brand:hover {
-	color: #ffffff;
+	color: #555353;
 	padding: 30px 15px;
 	font-size: 22px;
 	font-weight: 700;
@@ -258,7 +258,7 @@ section {
 	padding: 15px 0px;
 }
 .navbar-custom .navbar-nav>li>a {
-	color: #e3e3e3;
+	color: #353535;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -279,7 +279,7 @@ nav.small {
 
 /* 6 Home
 ----------------------------------------------------------------------------- */
-.main-home {
+/* .main-home {
 	padding: 330px 0px 250px 0;
 	z-index: 1;
 	text-align: center;
@@ -290,7 +290,7 @@ nav.small {
 	min-height: 400px;
 }
 .home-page-photo {
-	background-image: url(../images/bg-5.jpg);
+	background-image: url(../images/white.jpg);
 	background-size: cover;
 	z-index: -1;
 	position: absolute;
@@ -299,7 +299,7 @@ nav.small {
 	right: 0;
 	bottom: 0;
 	left: 0;
-}
+} */
 
 .home__header-content {
 	-webkit-transform: translateY(-50%);
@@ -571,6 +571,13 @@ ul.pattern .color12 {
   background-color: #9932cc;
 }
 
+.table-sf {
+	padding-left: 10% !important ; 
+	padding-right: 10% !important ; 
+}
+.map{
+	padding-bottom: 100px;
+}
 @media only screen and (max-width: 479px) {
 #style-switcher {
     display: none;
