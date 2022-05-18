@@ -87,9 +87,61 @@
         </div>
         </section>
     <!-- / End services-->
-<section>
+
+<div class="container-fluid table-sf">
+  <table class="table table-striped table-hover">
+    <tr>
+      <td>
+        <form onsubmit="event.preventDefault(); onFormSubmit" >
+          <div>
+            <label>Sr no</label>
+            <input type="text" name="srNo" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="srNo">
+          </div>
+
+          <div>
+            <label>Cattle Type</label>
+            <input type="text" name="cattleType" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="cattleType">
+          </div>
+
+          <div>
+            <label>Cattle Color</label>
+            <input type="text" name="cattleColor" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="cattleColor">
+          </div>
+
+          <div>
+            <label>	Milk production per day</label>
+            <input type="text" name="milkProduction" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="milkProduction">
+          </div>
+
+          <div>
+            <label>Gender</label>
+            <input type="text" name="gender" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="gender">
+          </div>
+
+          <div>
+            <label>Date of birth</label>
+            <input type="text" name="dateOfBirth" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="dateOfBirth">
+          </div>
+
+          <div>
+            <label>Weight</label>
+            <input type="text" name="weight" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="weight">
+          </div> <br>
+
+          <div class="col-auto">
+            <button type="submit"  class="btn btn-primary mb-3 " value="submit">Submit</button>
+          </div>
+         
+        </form>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+ <section>
   <div class="container-fluid table-sf  ">
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover" id="cattleList">
       <thead>
         <tr>
           <th scope="col">Sr no</th>
@@ -100,12 +152,13 @@
           <th scope="col">Date of birth</th>
           <th scope="col">Milk production per day</th>
           <th scope="col">weight</th>
+          <th></th>
 
 
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <!-- <tr>
           <th scope="row">1</th>
           <td>Cow</td>
           <td>Sahiwali</td>
@@ -148,12 +201,12 @@
           <td>15kg</td>
           <td>160kg</td>
 
-        </tr>
+        </tr> -->
 
       </tbody>
     </table>
   </div>
-</section>
+</section> 
 <!-- map -->
 
 <div class="map">
@@ -266,7 +319,7 @@
             <a href="#" class="settings"><i class="fa fa-refresh fa-spin"></i></a>
         </div>
     </div>
-    <!-- end Style switcher --> 
+    <!-- end Style switcher -->  
 
 
      <!-- initialize jQuery Library -->
@@ -294,6 +347,7 @@
 
      <!-- Switcher script for demo only -->
     <script type="text/javascript" src="js/switcher.js"></script>
+    <script src="./js/index.js"></script>
 
 
   </body>
