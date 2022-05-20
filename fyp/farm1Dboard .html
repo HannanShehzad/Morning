@@ -95,21 +95,42 @@
           <!--HTML form for crud operation-->
           <form autocomplete="off" onsubmit="onFormSubmit()">
               <div>
-                  <label for="fullName">Full Name</label>
-                  <input type="text" name="fullName" id="fullName" >
+                  <label for="srNo">Sr no</label>
+                  <input type="text" name="srNo" id="srNo" >
               </div>
               <div>
-                  <label for="empCode">EMP Code</label>
-                  <input type="text" name="empCode" id="empCode" >
+                  <label for="cattleType">Cattle Type</label>
+                  <input type="text" name="cattleType" id="cattleType" >
               </div>
               <div>
-                  <label for="salary">Salary</label>
-                  <input type="text" name="salary" id="salary">
+                  <label for="cattleBreed">Cattle Breed</label>
+                  <input type="text" name="cattleBreed" id="cattleBreed">
               </div>
               <div>
-                  <label for="city">City</label>
-                  <input type="text" name="city" id="city">
+                  <label for="cattleColor">Cattle Color</label>
+                  <input type="text" name="cattleColor" id="cattleColor">
               </div>
+
+              <div>
+                <label for="gender">Gender</label>
+                <input type="text" name="gender" id="gender">
+            </div>
+
+            <div>
+              <label for="dateOfBirth">Date Of Birth</label>
+              <input type="text" name="dateOfBirth" id="dateOfBirth">
+          </div>
+
+          <div>
+            <label for="milkProductionPerDay">Milk Production Per Day</label>
+            <input type="text" name="milkProductionPerDay" id="milkProductionPerDay">
+        </div>
+
+        <div>
+          <label for="weight">Weight</label>
+          <input type="text" name="weight" id="weight">
+      </div>
+
               <div class="form_action--button">
                   <input type="submit" value="Submit">
                   <input type="reset" value="Reset">
@@ -117,14 +138,19 @@
           </form>
       </td>
       <td>
-          <table class="list table table-striped table-hover" id="employeeList">
+          <table class="list table table-striped table-hover" id="cattleList">
               <thead>
                   <tr>
-                      <th>Full Name</th>
-                      <th>EMP Code</th>
-                      <th>Salary</th>
-                      <th>City</th>
+                      <th>Sr no</th>
+                      <th>Cattle Type</th>
+                      <th>Cattle Breed</th>
+                      <th>Cattle Color</th>
+                      <th >Gender</th>
+                      <th >Date of birth</th>
+                      <th >Milk production per day</th>
+                      <th >weight</th>
                       <th>Actions</th>
+                     
                   </tr>
               </thead>
               <tbody>
@@ -156,50 +182,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- <tr>
-          <th scope="row">1</th>
-          <td>Cow</td>
-          <td>Sahiwali</td>
-          <td>White with brown patches</td>
-          <td>Female</td>
-          <td>20-02-2018</td>
-          <td>15kg</td>
-          <td>160kg</td>
-
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Cow</td>
-          <td>Sahiwali</td>
-          <td>White with brown patches</td>
-          <td>Female</td>
-          <td>20-02-2018</td>
-          <td>15kg</td>
-          <td>160kg</td>
-
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Cow</td>
-          <td>australian</td>
-          <td>White with brown patches</td>
-          <td>Female</td>
-          <td>20-02-2018</td>
-          <td>15kg</td>
-          <td>160kg</td>
-
-        </tr>
-        <tr>
-          <th scope="row">1</th>
-          <td>Cow</td>
-          <td>Sahiwali</td>
-          <td>White with brown patches</td>
-          <td>Female</td>
-          <td>20-02-2018</td>
-          <td>15kg</td>
-          <td>160kg</td>
-
-        </tr> -->
+       
 
       </tbody>
     </table>
