@@ -17,14 +17,14 @@ document.getElementById("contForm").addEventListener('submit', function(e){
     }
     else
     {
-        let record = localStorage.getItem("Records");
+        let record = localStorage.getItem("shrRecords");
 
         if(record == null)
         {
             let records = [];
             let rcd = { sr_no:sr_no, cattleType:cattleType,  cattleBreed:cattleBreed, cattleColor:cattleColor, gender:gender, dateOfBirth:dateOfBirth, milkProductionPerDay:milkProductionPerDay, weight:weight};
             records.push(rcd);
-            localStorage.setItem("Records", JSON.stringify(records));
+            localStorage.setItem("shrRecords", JSON.stringify(records));
             alert("Information Added Successfully !!");
             document.getElementById("contForm").reset();
             getData();
@@ -50,7 +50,7 @@ document.getElementById("contForm").addEventListener('submit', function(e){
                     }
 
                 });
-                localStorage.setItem("Records", JSON.stringify(pRecord));
+                localStorage.setItem("shrRecords", JSON.stringify(pRecord));
                 alert("Information Updated Successfully !!");
                 document.getElementById("contForm").reset();
                 getData();
@@ -59,7 +59,7 @@ document.getElementById("contForm").addEventListener('submit', function(e){
             {
                 let rcd = { sr_no:sr_no, cattleType:cattleType,  cattleBreed:cattleBreed, cattleColor:cattleColor, gender:gender, dateOfBirth:dateOfBirth, milkProductionPerDay:milkProductionPerDay, weight:weight};
                 pRecord.push(rcd);
-                localStorage.setItem("Records", JSON.stringify(pRecord));
+                localStorage.setItem("shrRecords", JSON.stringify(pRecord));
                 alert("Information Added Successfully !!");
                 document.getElementById("contForm").reset();
                 getData();
@@ -73,7 +73,7 @@ document.getElementById("contForm").addEventListener('submit', function(e){
 
 function getData()
 {
-    let cont = JSON.parse(localStorage.getItem("Records"));
+    let cont = JSON.parse(localStorage.getItem("shrRecords"));
     var html = '';
     for(var a = 0; a < cont.length; a++)
     {
@@ -98,7 +98,7 @@ getData();
 
 function editRecord(id)
 {
-    let record = JSON.parse(localStorage.getItem("Records"));
+    let record = JSON.parse(localStorage.getItem("shrRecords"));
          
     record.find((item) => {
                         
@@ -120,8 +120,8 @@ function editRecord(id)
 
 function deleteRecord(id)
 {
-    let record = JSON.parse(localStorage.getItem("Records"));
+    let record = JSON.parse(localStorage.getItem("shrRecords"));
     let newRecord = record.filter((item) => item.sr_no != id);
-    localStorage.setItem("Records", JSON.stringify(newRecord));
+    localStorage.setItem("shrRecords", JSON.stringify(newRecord));
     getData();
 }

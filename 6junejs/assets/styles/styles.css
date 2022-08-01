@@ -1,0 +1,31 @@
+:root{
+    --leftclr:#253847;
+    --txtcolorlight:#e3edf0;
+}
+.cvleft-wrap{
+    background-color:var(--leftclr) ;
+    height: 200vh;
+    color: var(--txtcolorlight);
+}
+.cvleft-wrap img{
+    margin-top: 30px;
+    height: 200px;
+    border:3px solid white ;
+    border-radius: 200px;
+
+}
+.conth3{
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 10%;
+    border-bottom: 2px solid var(--txtcolorlight);
+    
+}
+
+
+.cvleft-wrapi{
+    margin-bottom: 30px;
+}
+.mail{
+    margin-top: 30px;
+}

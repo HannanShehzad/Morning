@@ -7,7 +7,7 @@
   <meta charset="utf-8"/>
 
   <!-- Site Title-->
-  <title>Cattle Farms Faisalabad</title>
+  <title>Dashboard Bal Dairy Farm</title>
 
   <!-- Mobile Specific Metas-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -57,14 +57,29 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Cattles in Faisalabad</a>
+        <a class="navbar-brand" href="#">Cattle in Faisalabad</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Farm Houses</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li class="nav-item dd-left" ><a  href="#services">Farm Houses</a>
+            <div class="dropdown-content">
+              <p><a href="./livestock.html">LIVESTOCK FARM</a></p>
+            <p><a href="./Bal Dairy Farm.html">BAL DAIRY FARM</a></p>
+            <p><a href="./zia cattle farm.html">ZIA CATTLE FARM</a></p>
+            <p><a href="./sarbuland cattle farm.html">SARBULAND DAIRY & LIVESTOCK FARM'S</a></p>
+            <p><a href="./jugnoo cattle farm.html">JUGNOO CATTLE FARM</a></p>
+            <p><a href="./Sharjeel cattle farm.html">SHARJEEL CATTLE FARM</a></p>
+            <p><a href="./Cheema cattle farm.html">CHEEMA DAIRY FARM</a></p>
+            <p><a href="./M.A.M cattle farm.html">M.A.M CATTLE FARMS</a></p>
+            <p><a href="./BBG cattle farm .html">BBG DAIRY FARM</a></p>
+            <p><a href="./CH.BASHIR AHMAD cattle farm.html">CH.BASHIR AHMAD DAIRY FARM</a></p>
+            <p><a href="./A.M cattle farm.html">A.M DAIRY FARM</a></p>
+            <p><a href="./Makkah cattle farm.html">MAKKAH DAIRY FARM</a></p>>
+          </div>
+          </li>
           <li><a href="#twitter_tweet">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -81,7 +96,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="title text-center">Available Catteles in Livestock Farms Faisalabad</h3>
+            <h3 class="title text-center">Dashboard of Bal Dairy Farm Faisalabad</h3>
             <div class="titleHR"><span></span></div>
           </div>
         </div>
@@ -93,47 +108,47 @@
     <tr>
       <td>
           <!--HTML form for crud operation-->
-          <form autocomplete="off" onsubmit="onFormSubmit()">
+          <form autocomplete="off" id="contForm">
               <div>
                   <label for="srNo">Sr no</label>
-                  <input type="text" name="srNo" id="srNo" >
-              </div>
+                  <input type="text" name="srNo" class="form-control" id="srNo" >
+              </div><br>
               <div>
                   <label for="cattleType">Cattle Type</label>
-                  <input type="text" name="cattleType" id="cattleType" >
-              </div>
+                  <input type="text" name="cattleType" class="form-control" id="cattleType" >
+              </div><br>
               <div>
                   <label for="cattleBreed">Cattle Breed</label>
-                  <input type="text" name="cattleBreed" id="cattleBreed">
-              </div>
+                  <input type="text" name="cattleBreed" class="form-control" id="cattleBreed">
+              </div><br>
               <div>
                   <label for="cattleColor">Cattle Color</label>
-                  <input type="text" name="cattleColor" id="cattleColor">
-              </div>
+                  <input type="text" name="cattleColor" class="form-control" id="cattleColor">
+              </div><br>
 
               <div>
                 <label for="gender">Gender</label>
-                <input type="text" name="gender" id="gender">
-            </div>
+                <input type="text" name="gender" class="form-control" id="gender">
+            </div><br>
 
             <div>
               <label for="dateOfBirth">Date Of Birth</label>
-              <input type="text" name="dateOfBirth" id="dateOfBirth">
-          </div>
+              <input type="text" name="dateOfBirth" class="form-control" id="dateOfBirth">
+          </div><br>
 
           <div>
             <label for="milkProductionPerDay">Milk Production Per Day</label>
-            <input type="text" name="milkProductionPerDay" id="milkProductionPerDay">
-        </div>
+            <input type="text" name="milkProductionPerDay" class="form-control" id="milkProductionPerDay">
+        </div><br>
 
         <div>
           <label for="weight">Weight</label>
-          <input type="text" name="weight" id="weight">
-      </div>
+          <input type="text" name="weight" class="form-control" id="weight">
+      </div> <br>
 
               <div class="form_action--button">
-                  <input type="submit" value="Submit">
-                  <input type="reset" value="Reset">
+                  <input type="submit" class="btn edtbtn" value="Submit">
+                  <input type="reset" class="btn" value="Reset">
               </div>
           </form>
       </td>
@@ -153,55 +168,23 @@
                      
                   </tr>
               </thead>
-              <tbody>
-
-              </tbody>
+              <tbody id="tbody"></tbody>
           </table>
       </td>
   </tr>
   </table>
+  <div > <a href="./Bal Dairy Farm.html" class="btn btn-custom openfarmbtn"> Open farm</a></div> <br> <br>
+  
 
 </div>
 
  
 <!-- map -->
+<br>
 
-<div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.0889537680255!2d73.07220871448068!3d31.43921795829177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39224288f4deafb9%3A0x53240a4afa487f39!2sLivestock%20Farm!5e0!3m2!1sen!2s!4v1652822680135!5m2!1sen!2s" width="1000" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div> <br>
 
     <!-- TWITTER TWEET -->
-    <section class="twitter_tweet parallax" id="twitter_tweet" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 text-center">
-            <div id="testi-carousel" class="owl-carousel owl-spaced">
-              <div>
-                <i class="fa fa-twitter"></i>
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde Lorem ipsum dolor sit amet..
-                </h5>
-                <p>- Jonathan Deo</p>
-              </div><!--testimonials item like paragraph-->
-              <div>
-                <i class="fa fa-twitter"></i>
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde Lorem ipsum dolor sit amet..
-                </h5>
-                <p>- Jonathan Deo</p>
-              </div><!--testimonials item like paragraph-->
-              <div>
-                <i class="fa fa-twitter"></i>
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat, eligendi magni quibusdam iure cupiditate ex voluptas unde Lorem ipsum dolor sit amet..
-                </h5>
-                <p>- Jonathan Deo</p>
-              </div><!--testimonials item like paragraph-->
-            </div>
-          </div> <!-- end col-md-8 -->
-        </div> <!-- end row -->
-      </div> <!-- container -->
-    </section>
+    
     <!-- End TWITTER TWEET -->
 
 
@@ -304,7 +287,7 @@
 
      <!-- Switcher script for demo only -->
     <script type="text/javascript" src="js/switcher.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/Bal Dairy Farm.js"></script>
 
 
   </body>
